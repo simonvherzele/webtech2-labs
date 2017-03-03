@@ -2,9 +2,13 @@ nav ul{
 	display: flex;
 	justify-content: space-around;
 }
- 
-nav ul .logo{
-	order: 1;
+
+nav ul .typography{
+	order: -2;
+}
+
+nav ul .ui{
+	order: -2;
 }
 
 #photos{
@@ -18,3 +22,13 @@ nav ul .logo{
 	margin-bottom: 5%;
 }
 
+@media screen and (max-width: 700px) {
+	nav ul .typography{
+		order: 0;
+	}
+
+	nav ul .ui{
+		order: 0;
+	}
+
+}
