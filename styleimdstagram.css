@@ -1,0 +1,20 @@
+nav ul{
+	display: flex;
+	justify-content: space-around;
+}
+ 
+nav ul .logo{
+	order: 1;
+}
+
+#photos{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#photos div{
+	margin-bottom: 5%;
+}
+
