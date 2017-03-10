@@ -1,0 +1,36 @@
+nav ul{
+	display: flex;
+	justify-content: space-around;
+}
+
+nav ul .typography{
+	order: -2;
+}
+
+nav ul .ui{
+	order: -2;
+}
+
+#photos{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#photos div{
+	margin-bottom: 5%;
+}
+
+@media screen and (max-width: 700px) {
+	nav ul .typography{
+		order: 0;
+	}
+
+	nav ul .ui{
+		order: 0;
+	}
+
+		
+
+}
