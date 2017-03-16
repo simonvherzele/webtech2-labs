@@ -7,12 +7,12 @@ class CardApp(){
         this.buttonAddNote.addEventListener("click", this.addNote.bind(this));
     }
 
-    CardApp.prototype.resetForm = function(){
+    resetForm(){
         this.noteInput.value = "";
         this.noteInput.focus();
     }
 
-    CardApp.prototype.addNote = function(e){
+    addNote(e){
         var newNote = document.createElement("div"); //<div> </div>
         newNote.setAttribute("class", "card"); // <div>
         newNote.innerHTML = "<p>" + this.noteInput.value + "</p>";
@@ -30,7 +30,7 @@ class CardApp(){
         console.log(e);
     }
 
-    CardApp.prototype.removeNote = function (e) {
+    removeNote(e){
         var noteToRemove = e.target.parentElement;
         this.notesContainer.removeChild(noteToRemove);
         e.preventDefault();
